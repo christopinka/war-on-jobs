@@ -13,6 +13,9 @@ htmlcov/
 # Generated runtime artifacts are excluded unless intentionally checked in.
 /data/backups/
 /data/screened/
+/data/logs/
+/data/*.jsonl
+*.jsonl
 
 # Optional local runtime state
 *.tmp

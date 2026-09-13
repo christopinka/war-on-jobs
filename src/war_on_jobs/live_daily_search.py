@@ -5,6 +5,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
 
+from src.war_on_jobs.process_logging import log_event
+
 try:
     import yaml
 except ImportError:  # pragma: no cover
@@ -278,6 +280,7 @@ def backup_current_state(target_dir: Path = TARGET_DIR, backup_root: Path = BACK
         if source.exists():
             shutil.copytree(source, destination)
 
+    log_event("backup_created", path=str(backup_dir), note="timestamped backup created before live screening")
     return backup_dir
 
 
@@ -285,6 +288,7 @@ def find_live_source():
     candidates = [RAW_SOURCE, JOB_TRACKER_FALLBACK]
     for candidate in candidates:
         if candidate.exists():
+            log_event("live_source_selected", source=str(candidate), note="live source chosen for screening")
             return candidate
     raise FileNotFoundError("No live source CSV found in data/raw or data/workflow.")
 
@@ -305,6 +309,7 @@ def main() -> None:
     SCREENED_DIR.mkdir(parents=True, exist_ok=True)
     write_csv_rows(SCREENED_DIR / "live_jobs_kept.csv", kept, append_mode=args.append)
     write_csv_rows(SCREENED_DIR / "live_jobs_rejected.csv", rejected, append_mode=args.append)
+    log_event("screen_write_complete", kept=len(kept), rejected=len(rejected), path=str(SCREENED_DIR), note="screened output files written")
 
     print(f"Backup created at: {backup_dir}")
     print(f"Source: {source}")

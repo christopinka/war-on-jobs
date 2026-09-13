@@ -1,0 +1,11 @@
+company,website,category,priority,direct_employer,geography,remote_ok,notes
+Accenture,https://www.accenture.com,tier-1 consulting / systems integration,medium,watch,global,yes,Useful as a consulting watch lane for enterprise software and healthcare transformation work; not a primary direct-employer target.
+Deloitte,https://www.deloitte.com,tier-1 consulting / advisory,medium,watch,global,yes,Strong consulting lane for enterprise and healthcare transformation; keep as a secondary watchlist only.
+PwC,https://www.pwc.com,tier-1 consulting / digital transformation,medium,watch,global,yes,Enterprise transformation lane; keep only when roles are clearly product or platform adjacent.
+EY,https://www.ey.com,tier-1 consulting / advisory,medium,watch,global,yes,Consulting watchlist for healthcare and transformation work; not a first-priority direct-employer target.
+Slalom,https://www.slalom.com,tier-1 consulting / product engineering,medium,watch,us,yes,Useful consulting lane with product and cloud work; watch for better fit than generic staffing roles.
+Capgemini,https://www.capgemini.com,tier-1 consulting / systems integration,medium,watch,global,yes,Consulting watchlist; useful only when the role is clearly technical and directly aligned to platform work.
+TEKsystems,https://www.teksystems.com,recruiting / staffing,low,watch,us,yes,Recruiting and staffing lane to capture middle-market placement work; not a direct-employer target.
+Robert Half,https://www.roberthalf.com,recruiting / staffing,low,watch,us,yes,Recruiting and staffing watchlist; useful only when a direct placement leads to a real technical role.
+"{""company"": null"," ""domain"": null"," ""note"": ""updated target csv with 8 rows"""," ""rows"": 8"," ""status"": ""target_csv_written"""," ""timestamp"": ""2026-09-13T21:36:15.304015+00:00"""," ""url"": null}",
+{"company": null, "domain": null, "note": "updated target csv with 8 rows", "rows": 9, "status": "target_csv_written", "timestamp": "2026-09-13T21:39:08.030505+00:00", "url": null}

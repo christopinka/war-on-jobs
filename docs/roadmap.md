@@ -29,6 +29,29 @@ We are keeping the project on a Python-native workflow and a backup-first operat
 5. Convert the strongest direct-employer matches into a role queue and application workflow.
 6. Only add Make or other build tooling if the workflow becomes genuinely repetitive enough to justify it.
 
+## Recommended operating pattern: broad lane search, then top 10
+
+The current search workflow should be run in two passes:
+
+1. Broad pass: review all relevant lanes and collect credible direct-employer roles
+2. Rank and cut: score the roles and keep only the strongest 10 for active pursuit
+
+This is the preferred operating model because it preserves optionality without allowing the backlog to become noisy or unreviewable.
+
+### Execution rule
+
+- Do not start by forcing a single company shortlist too early
+- Do not keep every plausible role in the active queue
+- Rank all credible results by fit, company value, location, and job quality
+- Keep the top 10 as the active queue
+- Keep the remainder in a lower-priority backlog or watchlist
+
+### Why this matters
+
+A broad lane search surfaces the best opportunities even when they are not obvious from the first company list. A top-10 cut is what turns the system into something a person can actually act on without drowning in low-signal roles.
+
+This is the right balance between breadth and discipline.
+
 ## Phase 0: profile intake and decision inputs
 
 Before we lean heavily on the agent context or start filtering jobs automatically, we need a compact intake layer that turns the current situation into structured search inputs.

@@ -1,0 +1,12 @@
+company,website,job_title,location,role_type,fit_score,status,priority,source,notes
+Epic,https://www.epic.com,Senior Software Engineer - Platform & Integrations,Remote - US,platform/backend,95,new,high,company_careers,"Strong direct-employer fit; likely API, integration, and backend platform work."
+athenahealth,https://www.athenahealth.com,Senior Software Engineer - Backend / Platform,Remote - US,backend/platform,94,new,high,company_careers,One of the strongest healthcare SaaS matches for backend and platform engineering.
+Oracle Health,https://www.oracle.com/health/,Senior Software Engineer - Health Platform,Remote - US,platform/cloud,93,new,high,company_careers,Large healthcare platform employer with likely strong integration and cloud work.
+Change Healthcare,https://www.changehealthcare.com,Senior Software Engineer - Integration / API,Remote - US,integration/backend,92,new,high,company_careers,"Good fit for healthcare workflow, claims, and integration-heavy product engineering."
+Veeva,https://www.veeva.com,Senior Software Engineer - Backend / Data Platform,Remote - US,backend/platform,91,new,high,company_careers,Strong fit for regulated SaaS and product platform work.
+GitLab,https://about.gitlab.com,Senior DevOps Engineer,Remote - Global,devops/platform,92,new,high,company_careers,Strong global remote SaaS fit with platform and automation depth.
+Deloitte,https://www.deloitte.com,Senior Cloud Engineer,Remote - US,cloud/platform,80,new,medium,company_careers,Consulting watch-lane company; keep as secondary signal and not the primary direct-employer list.
+Optum,https://www.optum.com,Senior Software Engineer - Cloud / Platform,Remote - US,platform/cloud,90,new,high,company_careers,Large payer and healthcare technology stack; high priority target.
+UnitedHealth Group,https://www.unitedhealthgroup.com,Senior Platform Engineer,Remote - US,platform/cloud,89,new,high,company_careers,Good if targeting payer-platform and broader healthcare systems work.
+Teladoc Health,https://www.teladoc.com,Senior Software Engineer - Backend / Platform,Remote - US,backend/platform,88,new,high,company_careers,Digital health product company with strong technical platform work.
+{"company": null, "domain": null, "limit": 10, "note": "top roles output generated with explicit lane quotas", "rows": 10, "status": "top_roles_written", "timestamp": "2026-09-13T21:39:08.031454+00:00", "url": null}

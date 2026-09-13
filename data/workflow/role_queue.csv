@@ -1,4 +1,6 @@
 company,website,job_title,location,role_type,fit_score,status,priority,source,notes
+GitLab,https://about.gitlab.com,Senior DevOps Engineer,Remote - Global,devops/platform,92,new,high,company_careers,"Strong global remote SaaS fit with platform and automation depth."
+Deloitte,https://www.deloitte.com,Senior Cloud Engineer,Remote - US,cloud/platform,80,new,medium,company_careers,"Consulting watch-lane company; keep as secondary signal and not the primary direct-employer list."
 Epic,https://www.epic.com,Senior Software Engineer - Platform & Integrations,Remote - US,platform/backend,95,new,high,company_careers,"Strong direct-employer fit; likely API, integration, and backend platform work."
 athenahealth,https://www.athenahealth.com,Senior Software Engineer - Backend / Platform,Remote - US,backend/platform,94,new,high,company_careers,"One of the strongest healthcare SaaS matches for backend and platform engineering."
 Oracle Health,https://www.oracle.com/health/,Senior Software Engineer - Health Platform,Remote - US,platform/cloud,93,new,high,company_careers,"Large healthcare platform employer with likely strong integration and cloud work."

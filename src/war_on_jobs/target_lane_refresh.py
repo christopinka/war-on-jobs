@@ -7,6 +7,8 @@ import argparse
 import csv
 from pathlib import Path
 
+from src.war_on_jobs.process_logging import log_event
+
 ROOT = Path(__file__).resolve().parents[2]
 WORKFLOW_DIR = ROOT / "data" / "workflow"
 ORDER_FILE = WORKFLOW_DIR / "lane_refresh_order.csv"
@@ -338,6 +340,8 @@ def append_to_target(target_path: Path, new_rows: list[dict[str, str]]) -> None:
         writer.writeheader()
         writer.writerows(merged)
 
+    log_event("target_csv_written", path=str(target_path), rows=len(merged), note=f"updated target csv with {len(new_rows)} rows")
+
 
 def print_order(rows: list[dict[str, str]]) -> None:
     for row in rows:
@@ -353,14 +357,17 @@ def refresh_targets(rows: list[dict[str, str]]) -> None:
         target_path = ROOT / row["target_csv"]
         lane_name = row["lane"]
         print(f"Refreshing {lane_name} -> {target_path}")
+        log_event("lane_refresh_started", lane=lane_name, target=str(target_path))
 
         payload_rows = LANE_PAYLOADS.get(lane_name, [])
         if not payload_rows:
             print(f"No payload rows defined for {lane_name}")
+            log_event("lane_refresh_empty", lane=lane_name, target=str(target_path), note="no payload rows defined")
             continue
 
         append_to_target(target_path, payload_rows)
         print(f"Updated {target_path} with {len(payload_rows)} rows")
+        log_event("lane_refresh_complete", lane=lane_name, target=str(target_path), rows=len(payload_rows), note="lane payload refreshed")
         print()
 
 

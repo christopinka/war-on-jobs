@@ -10,3 +10,5 @@ Mend,https://www.mend.com,care navigation / patient support,medium,yes,us,maybe,
 Zocdoc,https://www.zocdoc.com,patient access / digital health,medium,yes,us,maybe,good,"backend, platform, data, API, cloud",new,2026-09-13,Consumer-health product company; good adjacent lane if you want digital health.
 Aledade,https://www.aledade.com,value-based care / provider operations,medium,yes,us,maybe,good,"backend, data, API, platform, cloud",new,2026-09-13,Healthcare operations and analytics software in a value-based care context.
 Teladoc Health,https://www.teladoc.com,digital health / telehealth,high,yes,us,maybe,,,,,Strong digital health platform and product engineering fit.
+"{""company"": null"," ""domain"": null"," ""note"": ""updated target csv with 6 rows"""," ""rows"": 11"," ""status"": ""target_csv_written"""," ""timestamp"": ""2026-09-13T21:36:15.303449+00:00"""," ""url"": null}",,,,,
+{"company": null, "domain": null, "note": "updated target csv with 6 rows", "rows": 12, "status": "target_csv_written", "timestamp": "2026-09-13T21:39:08.030097+00:00", "url": null}

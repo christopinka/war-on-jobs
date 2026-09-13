@@ -16,21 +16,21 @@ This repo is designed around a narrow operating model:
 
 ## Current strategy
 
-The workflow now separates the search into three lanes:
+The workflow separates the search into three explicit lanes:
 
 1. Core healthcare technology lane
    - healthcare SaaS, regulated software, payer/provider workflow, interoperability, and data-heavy healthtech
    - active file: [data/targets/target_company_active_list.csv](data/targets/target_company_active_list.csv)
 
 2. Global remote SaaS lane
-   - remote-first, direct-employer, product-company roles with strong devops, platform, backend, cloud, and infra fit
+   - remote-first, direct-employer, product-company roles with strong DevOps, platform, backend, cloud, and infra fit
    - active file: [data/targets/company_targets.csv](data/targets/company_targets.csv)
 
 3. Healthcare-adjacent lane
    - digital health, care navigation, patient engagement, value-based care, and related workflow software
    - active file: [data/targets/adjacent_lane_targets.csv](data/targets/adjacent_lane_targets.csv)
 
-The system stays disciplined by treating each lane as a separate shortlist rather than one giant catch-all list.
+The system stays disciplined by keeping each lane separate, validating company discovery against the repo allowlist, and using a small active queue rather than a noisy broad funnel.
 
 ## Repository layout
 
@@ -60,15 +60,21 @@ python3 -m unittest -q
 
 ## Core flow
 
-1. Refresh or regenerate the target-company shortlist for the appropriate lane.
+1. Refresh or regenerate the target-company shortlist across the relevant lanes.
 2. Keep each lane in its own target CSV rather than mixing all companies together.
-3. Append new candidates and update existing rows in place; never replace the whole file with a broad dump.
-4. Fill out the profile intake in [data/workflow/career_profile_intake.yaml](data/workflow/career_profile_intake.yaml) so the search is based on real constraints instead of vague intention.
-5. Convert the shortlist into a role queue.
-6. Pull in raw job records or search results.
-7. Run the screening script to reject recruiter/vendor noise using the configured keyword lists and the profile-defined minimum fit score.
-8. Review kept and rejected outputs.
-9. Prioritize and apply only to the strongest direct-employer matches.
+3. Validate potential company and careers URLs against the allowlist in [data/site_allowlist.yaml](data/site_allowlist.yaml) and the approved registry in [data/workflow/company_site_urls.csv](data/workflow/company_site_urls.csv).
+4. Append new candidates and update existing rows in place; never replace the whole file with a broad dump.
+5. Fill out the profile intake in [data/workflow/career_profile_intake.yaml](data/workflow/career_profile_intake.yaml) so the search is based on real constraints instead of vague intention.
+6. Search only across the approved company and careers pages, collecting only relevant titles and role URLs.
+7. Score and rank the collected roles by fit, company value, location, and strategic relevance.
+8. Cut the full list down to the strongest top 10 as the active pursuit queue.
+9. Move the rest into a watchlist or backlog rather than letting the pipeline become noisy.
+10. Convert the shortlisted roles into the active role queue and contact plan.
+11. Pull in raw job records or search results.
+12. Run the screening script to reject recruiter/vendor noise using the configured keyword lists and the profile-defined minimum fit score.
+13. Log each subflow write and trigger event to the JSONL workflow log.
+14. Review kept and rejected outputs.
+15. Apply or contact only to the strongest direct-employer matches in the active queue.
 
 ## Operational guidance
 
@@ -82,6 +88,14 @@ The target design is now:
 - a small, disciplined application queue rather than a noisy funnel
 - a separate global remote SaaS lane for devops/platform-oriented product work
 - a separate healthcare-adjacent lane for digital health and workflow-adjacent employers
+- employer career pages and ATSs as the primary job source
+- LinkedIn used only as a discovery and validation signal, not as the canonical job source
+- company-scoped role discovery only: visit approved company/careers pages and capture only relevant titles and URLs
+- repo-owned allowlist validation before the site is considered a valid discovery target
+- explicit workflow logging for phase transitions, file updates, and failures
+- no broad web scraping as the default operating model
+
+If a company site is missing, no jobs are found, or the URL falls outside the approved allowlist, the workflow records the failure and continues without prompting endlessly or guessing at the next step.
 
 ## Tooling decision
 

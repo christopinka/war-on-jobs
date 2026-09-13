@@ -1,0 +1,28 @@
+# Allowed sites for company and role discovery queries.
+# Keep this list in the repo so query logic does not depend on hardcoded values.
+# The intent is to be narrow and high-signal across target employers.
+
+allowed_sites:
+  - epic.com
+  - athenahealth.com
+  - oracle.com
+  - changehealthcare.com
+  - veeva.com
+  - optum.com
+  - unitedhealthgroup.com
+  - teladoc.com
+  - komodohealth.com
+  - healthcatalyst.com
+  - surescripts.com
+  - innovaccer.com
+  - gitlab.com
+  - datadog.com
+  - cloudflare.com
+  - hashicorp.com
+  - atlassian.com
+  - snyk.io
+  - cedar.com
+  - phreesia.com
+  - aledade.com
+  - mend.com
+  - arcadia.io

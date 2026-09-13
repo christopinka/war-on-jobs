@@ -16,3 +16,5 @@ Cloudflare,https://www.cloudflare.com,high,infra / networking / platform,Strong 
 HashiCorp,https://www.hashicorp.com,medium,devops / infra,"Excellent fit for infra automation, platform, and devops engineering.",yes,global,yes
 Atlassian,https://www.atlassian.com,medium,SaaS / devtools,Global product company with good developer tooling and platform culture.,yes,global,yes
 Snyk,https://snyk.io,medium,security / platform SaaS,Good fit for product company security and platform engineering work.,yes,global,yes
+"{""company"": null"," ""domain"": null"," ""note"": ""updated target csv with 6 rows"""," ""rows"": 17"," ""status"": ""target_csv_written"""," ""timestamp"": ""2026-09-13T21:36:15.302907+00:00"""," ""url"": null}",
+{"company": null, "domain": null, "note": "updated target csv with 6 rows", "rows": 18, "status": "target_csv_written", "timestamp": "2026-09-13T21:39:08.029637+00:00", "url": null}
