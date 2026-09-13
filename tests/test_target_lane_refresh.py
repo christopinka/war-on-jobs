@@ -18,6 +18,7 @@ class TargetLaneRefreshTests(unittest.TestCase):
             "core_healthcare",
             "global_remote_saas",
             "healthcare_adjacent",
+            "consulting_recruiting_tier1",
         ])
 
     def test_merge_rows_appends_new_and_updates_existing(self):

@@ -72,6 +72,95 @@ Keep the best-fit direct-employer roles and reject:
 - low-signal generic jobs
 - blocked or disallowed locations
 
+## How to add a new lane
+
+Use this sequence when creating a new target lane.
+
+### 1. Decide whether the lane is primary or secondary
+
+A primary lane should be a real direct-employer target list. A secondary lane should be a watchlist for consulting, recruiting, or adjacent opportunities that are useful but not core to the direct-hire strategy.
+
+### 2. Add the prompt file
+
+Create a new prompt under:
+
+- data/prompts/
+
+The prompt should define:
+- the purpose of the lane
+- the intended company types
+- the explicit exclusions
+- the output file target
+- the ranking and quality rules
+
+This is where the lane-specific judgment belongs.
+
+### 3. Add the lane to the ordered refresh registry
+
+Update:
+
+- data/workflow/lane_refresh_order.csv
+
+This file defines the operational order of the lane refresh workflow. Each lane entry needs:
+- step number
+- lane name
+- prompt file path
+- target CSV path
+- trigger name
+- status
+
+This is the part that makes the lane active in the single refresh sequence.
+
+### 4. Add the lane payload in the Python refresh logic
+
+Update:
+
+- src/war_on_jobs/target_lane_refresh.py
+
+Add a new entry to the LANE_PAYLOADS dictionary. This is the actual seed list used by the refresh logic. It should include a small curated set of employers and a note explaining why they belong in the lane.
+
+This is the code-side enforcement step.
+
+### 5. Decide whether the lane needs profile or rule changes
+
+The lane-specific rules may require updates to:
+
+- data/workflow/career_profile_intake.yaml
+- the reject/priority keywords in the live filter profile
+- the direct-employer or staffing exclusions in the operating profile
+
+For example, a consulting/recruiting lane should usually be marked as secondary and not treated as a direct-employer lane in the candidate profile.
+
+### 6. Update tests and validation
+
+Add or update the expected lane sequence in:
+
+- tests/test_target_lane_refresh.py
+
+This protects the lane registry and stops the repo from silently drifting.
+
+### 7. Validate the workflow
+
+Before claiming the lane is ready, run:
+
+- python3 -m unittest discover -s tests -q
+
+and then run the root workflow if needed:
+
+- python3 workflow.py
+
+### What we needed to add for the consulting/recruiting lane
+
+For this project, the set of required additions was:
+
+- a prompt file in data/prompts/
+- a lane row in data/workflow/lane_refresh_order.csv
+- a payload entry in src/war_on_jobs/target_lane_refresh.py
+- a test update in tests/test_target_lane_refresh.py
+- a decision to keep the lane secondary and explicit instead of mixing it into the primary direct-employer flows
+
+The config file itself did not need a brand-new branch of logic unless the lane was intended to become a first-class target. In this case, the lane stayed as a watchlist, which kept the existing YAML and filtering rules intact while making the lane explicit and operational.
+
 ## Validation
 
 Before claiming the repo is green, run:
