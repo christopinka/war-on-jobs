@@ -26,6 +26,22 @@ This repo keeps the human guidance layer separate from the execution layer.
 
 The prompt tells the system what matters. The code decides what to do with it.
 
+## Exact workflow sequence
+
+The repo’s current single-launch workflow is explicitly ordered and should be treated as the canonical sequence:
+
+1. Refresh the target-company lanes
+2. Back up the current working state
+3. Screen the live job tracker against the active profile
+4. Write the kept and rejected outputs
+5. Review only the highest-signal rows and move the strongest matches into the role queue
+
+The entrypoint for this sequence is:
+
+- python3 workflow.py
+
+This is the operational flow that the repository currently implements. It is intentionally not a browser-heavy process and it does not depend on a broad “search everywhere” loop.
+
 ## Current operating design
 
 The working design is now intentionally structured as three lanes, each with its own CSV and refresh prompt, plus a backup-first local automation loop.

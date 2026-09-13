@@ -9,5 +9,10 @@ htmlcov/
 *.log
 
 # Local data files
-# Keep curated tracking data and shortlist artifacts in Git so they are backed up with the repo.
-# Generated outputs may be added explicitly when needed.
+# Keep curated source CSVs in Git so the repo stays self-contained.
+# Generated runtime artifacts are excluded unless intentionally checked in.
+/data/backups/
+/data/screened/
+
+# Optional local runtime state
+*.tmp

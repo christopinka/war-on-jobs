@@ -44,6 +44,19 @@ The screening engine reads from the profile intake before deciding whether a job
 - allowed geography preferences
 - the working definition of direct-employer signal
 
+### Exact runtime sequence
+
+The current implementation has a single canonical workflow with two explicit phases:
+
+1. Refresh the target-company lanes with the ordered lane registry
+2. Back up the current working state and run the live screen against the tracker rows
+
+The root user entrypoint is:
+
+- python3 workflow.py
+
+This is the actual launch sequence reflected in the repo. It refreshes the three target CSVs first, then creates the backup and writes the kept/rejected live screen outputs.
+
 The design is not "search everywhere." The design is "search a few lanes deeply, keep only the highest-signal employers and roles, and protect the working data with backups before each live pass."
 
 ## Rule set
