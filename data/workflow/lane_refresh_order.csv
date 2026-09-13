@@ -1,0 +1,4 @@
+step,lane,prompt_file,target_csv,trigger_name,status
+1,core_healthcare,data/prompts/refresh-target-company-list-prompt.md,data/targets/target_company_active_list.csv,refresh_core_healthcare,ready
+2,global_remote_saas,data/prompts/refresh-global-remote-saas-target-list-prompt.md,data/targets/company_targets.csv,refresh_global_remote_saas,ready
+3,healthcare_adjacent,data/prompts/refresh-healthcare-adjacent-target-list-prompt.md,data/targets/adjacent_lane_targets.csv,refresh_healthcare_adjacent,ready

@@ -1,12 +1,18 @@
-company,website,priority,category,notes
-UST,https://www.ust.com,high,healthcare_platform,"Direct employer; platform engineering in healthcare/cloud"
-Veterans United Home Loans,https://www.veteransunited.com,high,healthcare_platform,"Direct employer; healthcare/regulated customer platform"
-Tebra,https://www.tebra.com,high,healthcare_platform,"Direct employer; healthcare SaaS / platform work"
-EquipmentShare,https://www.equipmentshare.com,medium,product_platform,"Direct employer; platform/product engineering"
-MI Softech Inc,https://www.misoftech.com,medium,healthcare_integration,"Direct employer; healthcare integration / MFT"
-Intuitive.ai,https://www.intuitive.ai,medium,healthcare_platform,"Direct employer; healthcare / industry solutions"
-Snapsheet Inc,https://www.snapsheet.com,medium,healthcare_platform,"Direct employer; healthcare / claims adjacent"
-Jobot,https://www.jobot.com,medium,healthcare_data,"Direct employer; healthcare data engineering"
-Respondus,https://www.respondus.com,medium,product_platform,"Direct employer; platform/dev tools"
-thatDot,https://www.thatdot.com,medium,platform_technology,"Direct employer; distributed systems / platform"
-Haystack,https://www.haystack.io,medium,platform_technology,"Direct employer; platform / product engineering"
+company,website,priority,category,notes,direct_employer,geography,remote_ok
+UST,https://www.ust.com,high,healthcare_platform,Direct employer; platform engineering in healthcare/cloud,,,
+Veterans United Home Loans,https://www.veteransunited.com,high,healthcare_platform,Direct employer; healthcare/regulated customer platform,,,
+Tebra,https://www.tebra.com,high,healthcare_platform,Direct employer; healthcare SaaS / platform work,,,
+EquipmentShare,https://www.equipmentshare.com,medium,product_platform,Direct employer; platform/product engineering,,,
+MI Softech Inc,https://www.misoftech.com,medium,healthcare_integration,Direct employer; healthcare integration / MFT,,,
+Intuitive.ai,https://www.intuitive.ai,medium,healthcare_platform,Direct employer; healthcare / industry solutions,,,
+Snapsheet Inc,https://www.snapsheet.com,medium,healthcare_platform,Direct employer; healthcare / claims adjacent,,,
+Jobot,https://www.jobot.com,medium,healthcare_data,Direct employer; healthcare data engineering,,,
+Respondus,https://www.respondus.com,medium,product_platform,Direct employer; platform/dev tools,,,
+thatDot,https://www.thatdot.com,medium,platform_technology,Direct employer; distributed systems / platform,,,
+Haystack,https://www.haystack.io,medium,platform_technology,Direct employer; platform / product engineering,,,
+GitLab,https://about.gitlab.com,high,devops / platform SaaS,Strong remote-first engineering culture with devops and platform work.,yes,global,yes
+Datadog,https://www.datadoghq.com,high,observability / platform,"Very strong observability, cloud, and platform engineering match.",yes,global,yes
+Cloudflare,https://www.cloudflare.com,high,infra / networking / platform,Strong infrastructure and platform engineering fit for remote global roles.,yes,global,yes
+HashiCorp,https://www.hashicorp.com,medium,devops / infra,"Excellent fit for infra automation, platform, and devops engineering.",yes,global,yes
+Atlassian,https://www.atlassian.com,medium,SaaS / devtools,Global product company with good developer tooling and platform culture.,yes,global,yes
+Snyk,https://snyk.io,medium,security / platform SaaS,Good fit for product company security and platform engineering work.,yes,global,yes

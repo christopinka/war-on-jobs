@@ -1,0 +1,110 @@
+# Career profile intake for job-search targeting
+# Fill this in once, then use it to guide lane selection, filters, and role targeting.
+
+candidate:
+  name: ""
+  current_role: ""
+  resume_path: ""
+  years_experience: ""
+  strongest_technical_areas:
+    - ""
+    - ""
+
+career_goals:
+  target_role_families:
+    - "backend"
+    - "platform"
+    - "cloud"
+    - "devops"
+    - "integration"
+  preferred_industries:
+    - "healthcare"
+    - "healthtech"
+    - "regulated_saas"
+    - "remote_saas"
+  desired_work_style:
+    - "remote"
+  role_preferences:
+    direct_hire: true
+    consulting: false
+    contract: false
+    staff: true
+    product_engineering: true
+    platform_infrastructure: true
+  optimize_for:
+    - "stability"
+    - "platform_depth"
+    - "healthcare_relevance"
+
+location:
+  current_location: ""
+  preferred_locations:
+    - "remote"
+    - "us"
+  relocation_ok: false
+  relocation_countries: []
+  remote_hybrid_onsite: "remote-first"
+  remote_global_ok: true
+  timezone_preferences: ""
+  travel_willingness: "low"
+  international_work_ok: false
+  work_authorization: ""
+  visa_constraints: ""
+
+financial:
+  salary_floor: ""
+  salary_target: ""
+  min_stability_required: ""
+  debt_or_obligations: ""
+  lower_pay_ok_for:
+    - "better_location"
+    - "better_team_fit"
+    - "remote_flexibility"
+  contract_vs_full_time_approach: "prefer_durable_full_time"
+
+company_and_role_filters:
+  minimum_company_signal: "direct_employer"
+  minimum_fit_score: 2
+  avoid_company_types:
+    - "staffing"
+    - "recruiting_agency"
+    - "vendor_wrapper"
+    - "contract_only"
+  avoid_industries: []
+  avoid_roles: []
+  job_title_priorities:
+    - "Platform Engineer"
+    - "Cloud Engineer"
+    - "DevOps Engineer"
+    - "Backend Engineer"
+  keywords_to_prioritize:
+    - "aws"
+    - "kubernetes"
+    - "terraform"
+    - "python"
+    - "sql"
+    - "healthcare"
+  keywords_to_reject:
+    - "recruiter"
+    - "staffing"
+    - "vendor"
+    - "consulting"
+    - "contract"
+
+personal_constraints:
+  minimum_team_quality: ""
+  deal_breakers:
+    - ""
+    - ""
+  desired_company_size: ""
+  preferred_company_stage: ""
+  preferred_culture_signals:
+    - "remote_friendly"
+    - "strong_engineering_quality"
+    - "healthcare_domain_relevance"
+  quality_of_life_priority: true
+
+notes:
+  summary: ""
+  non_goals: []
+  important_context: []

@@ -1,0 +1,5 @@
+title,company,location,fit_score,reject,reason
+Senior Java Engineer,Haystack,United States (Remote),1,True,low_fit_score
+Senior Software Developer,Respondus,"Redmond, WA (Remote)",1,True,low_fit_score
+"Recruiter, Technical Staffing",Example Staffing Co,United States (Remote),0,True,vendor_or_recruiter
+Senior DevOps Engineer,Vendor Partners LLC,United States (Remote),0,True,vendor_or_recruiter

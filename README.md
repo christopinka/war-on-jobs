@@ -11,6 +11,7 @@ This repo is designed around a narrow operating model:
 - maintain distinct target lists for the strongest job lanes
 - convert those lists into a role queue and application workflow
 - score job opportunities locally with a simple rule-based filter
+- read the screening rules from the profile intake so reject lists and fit thresholds stay aligned with your actual goals
 - keep outputs in CSV format for easy review, iteration, and backup
 
 ## Current strategy
@@ -39,6 +40,15 @@ The system stays disciplined by treating each lane as a separate shortlist rathe
 - `docs/` — design and strategic planning documents
 - `README.md` — repo overview
 
+## Prompt vs code
+
+This repo intentionally separates human intent from runtime behavior.
+
+- Prompt files are guidance and configuration input. They ask the user for constraints and preferences, and they are stored as markdown or YAML. Examples: [data/prompts/profile-intake-questionnaire.md](data/prompts/profile-intake-questionnaire.md) and [data/workflow/career_profile_intake.yaml](data/workflow/career_profile_intake.yaml).
+- Code files are the actual enforcement layer. They read the profile, score jobs, reject noise, and write the CSV outputs. Examples: [src/war_on_jobs/live_daily_search.py](src/war_on_jobs/live_daily_search.py) and [src/war_on_jobs/target_lane_refresh.py](src/war_on_jobs/target_lane_refresh.py).
+
+The prompt is not the filter. The code is the filter.
+
 ## Quick start
 
 ```bash
@@ -53,11 +63,12 @@ python3 -m unittest -q
 1. Refresh or regenerate the target-company shortlist for the appropriate lane.
 2. Keep each lane in its own target CSV rather than mixing all companies together.
 3. Append new candidates and update existing rows in place; never replace the whole file with a broad dump.
-4. Convert the shortlist into a role queue.
-5. Pull in raw job records or search results.
-6. Run the screening script to reject recruiter/vendor noise.
-7. Review kept and rejected outputs.
-8. Prioritize and apply only to the strongest direct-employer matches.
+4. Fill out the profile intake in [data/workflow/career_profile_intake.yaml](data/workflow/career_profile_intake.yaml) so the search is based on real constraints instead of vague intention.
+5. Convert the shortlist into a role queue.
+6. Pull in raw job records or search results.
+7. Run the screening script to reject recruiter/vendor noise using the configured keyword lists and the profile-defined minimum fit score.
+8. Review kept and rejected outputs.
+9. Prioritize and apply only to the strongest direct-employer matches.
 
 ## Operational guidance
 
@@ -71,6 +82,15 @@ The target design is now:
 - a small, disciplined application queue rather than a noisy funnel
 - a separate global remote SaaS lane for devops/platform-oriented product work
 - a separate healthcare-adjacent lane for digital health and workflow-adjacent employers
+
+## Tooling decision
+
+This project intentionally follows a Python-first workflow.
+
+- The canonical launch path is the Python script entrypoint in [src/war_on_jobs/target_lane_refresh.py](src/war_on_jobs/target_lane_refresh.py).
+- Ruff is the active linting tool.
+- Make is intentionally deferred and not part of the current workflow.
+- The rationale and backlog are recorded in [docs/roadmap.md](docs/roadmap.md).
 
 ## Notes
 
