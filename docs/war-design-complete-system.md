@@ -1,16 +1,16 @@
-# Target employer assembly playbook
+# Target employer assembly and role-queue design
 
-This is the working method for assembling a narrow, defensible target employer list for the healthcare/platform lane.
+This is the working design for the healthcare/platform job-search system. It is not only a company list; it is the first layer of a narrow, operational pipeline that moves from employer targeting to role screening and application tracking.
 
 ## Goal
 
-Build a small, direct-employer list of companies that are plausible matches for:
+Build a small, direct-employer system for a software engineer in the healthcare technology lane:
 - healthcare or regulated software
 - platform / cloud / DevOps / infrastructure engineering
 - remote-friendly or geographically acceptable hiring
 - technical roles that fit your background and interests
 
-The goal is not to collect a giant list. The goal is to collect a short list that is concrete, relevant, and actionable.
+The goal is not to collect a giant list. The goal is to collect a short list that is concrete, relevant, and actionable, then turn that list into a disciplined role queue.
 
 ## Current operating design
 
@@ -18,12 +18,17 @@ The working design is now intentionally narrow and local:
 
 - keep the search lane limited to direct-employer healthcare technology companies
 - filter aggressively against hospital IT, agencies, consultants, vendor wrappers, and generic recruiting noise
-- use a small local CSV as the working system of record rather than broad LinkedIn browsing as the primary workflow
-- maintain a curated active shortlist and move from company-level tracking to role-level tracking as the shortlist matures
+- use a small local CSV workflow as the system of record rather than broad LinkedIn browsing as the primary workflow
+- maintain a curated active shortlist and convert it into a role-level queue for real review and application activity
 
-The current active artifact is the shortlist in [data/target_company_active_list.csv](data/target_company_active_list.csv). This file is the live working list for the next phase of search and application activity.
+This system has three connected layers:
+1. target-company generation
+2. role queue and job review
+3. screening and filtering logic
 
-The design is not "search everywhere." The design is "search a few lanes deeply and keep only the highest-signal employers."
+The current active artifact is the shortlist in [data/targets/target_company_active_list.csv](data/targets/target_company_active_list.csv). The operational job queue lives in [data/workflow/role_queue.csv](data/workflow/role_queue.csv).
+
+The design is not "search everywhere." The design is "search a few lanes deeply and keep only the highest-signal employers and roles."
 
 ## Rule set
 
