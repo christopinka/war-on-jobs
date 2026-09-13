@@ -1,0 +1,3 @@
+title,company,description,location,fit_score,good_matches,bad_matches,reason
+Recruiter,Staffing Group,"agency, vendor, contractor",Remote,-10,,"recruiter, agency, staffing, vendor, contract",keyword_match
+Senior Consultant,Vendor Services,"consulting, offshore, contract work",Remote,-8,,"vendor, consulting, contract, offshore",keyword_match

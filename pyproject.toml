@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "war-on-jobs"
+version = "0.1.0"
+description = "Local job screening pipeline for a narrow direct-employer target lane"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

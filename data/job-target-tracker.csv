@@ -1,0 +1,2 @@
+company,role_title,source,job_url,posted_date,domain,tech_stack,experience_fit,stack_fit,domain_fit,company_quality,recruiter_vendor_noise,notes,status,next_action
+Example Corp,Senior Software Engineer,LinkedIn,https://example.com/job,2026-09-12,healthcare,"Python, AWS, Kubernetes",5,4,5,4,1,"Strong direct employer signal; product team; good domain fit","new","research and apply"

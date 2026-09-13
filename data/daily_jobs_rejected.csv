@@ -1,0 +1,3 @@
+title,company,location,fit_score,reject,reason
+"Recruiter, Technical Staffing",Example Staffing Co,United States (Remote),-4,True,vendor_or_blocked_location
+Senior DevOps Engineer,Vendor Partners LLC,United States (Remote),-3,True,vendor_or_blocked_location

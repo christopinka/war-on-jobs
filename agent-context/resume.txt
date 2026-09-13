@@ -1,0 +1,144 @@
+Christopher M. Topinka
+        Software Engineer
+573.823.0616 • cmtopinka@gmail.com • Columbia, MO • LinkedIn
+Springboot, Groovy, Golang, React, AWS, GitOps, Health Care
+
+With 18+ years of experience as a software engineer, I embrace developing and maintaining modern, scalable, and secure applications and services. I am adept at applying algorithm optimizations, SOLID principles, clean code, testing, and provability to team processes and workflow, guided by Agile values and Inner Source best practices. I have recent experience with projects involved in legacy upgrade and cloud migrations, full-stack DevOps, and remote collaboration. 
+
+EXPERIENCE
+
+Software Engineer
+Amazon Web Services (AWS) - Enterprise Engineering (Contract via Avanade/Accenture) · Contract
+Dec 2025 - Present · 9 mos
+Dublin, County Dublin, Ireland · Remote
+Primary engineer for admin-led migration capability on Concentrate — Amazon's enterprise file migration platform to move 100K+ users and 80 million documents from Quip to Microsoft 365 via a multi-backend RClone orchestration service.
+• Designed and built an inventory-based job building system that integrated seamlessly into existing orchestration frameworks. 
+• Developed a credential resolution system that eliminated reliance on individual user tokens, streamlining bulk migration processes.
+• Diagnosed and resolved critical build issues, improving team productivity and understanding of the pipeline. 
+• Documented systemic tech debt and proposed architectural improvements to optimize platform performance.
+• Stack includes Golang, Java, Typescript, React, AWS Enterprise Engineering - Tooling/Platforms: CDK, Hydra (test platform), Pipelines (CI/CD), Brazil (build system), ITL, CloudAuth (AAA), Agentic Coding Agents, AWS Services - Compute & Containers: ECS (Fargate), Lambda
+Storage & Database: S3, DynamoDB, ElastiCache (Valkey/Redis)
+Networking: VPC, Route53, CloudFront, Elastic Load Balancing, PrivateLink
+Security & Identity: IAM, KMS, Secrets Manager, Certificate Manager, STS (cross-account AssumeRole)
+Integration & Messaging: EventBridge, SQS, SNS, Step Functions
+Observability: CloudWatch (alarms, dashboards, metrics, logs), X-Ray
+Other: SSM Parameter Store, Glue
+Non-AWS: Quip API, Microsoft Graph API (SharePoint/OneDrive), MSAL (Azure AD OAuth), WorkDocs AP
+    • Fully remote with overseas teams.
+
+Flagstar Bank • Troy, MI • 01/2024 - 08/2024  
+Senior Software Engineer
+As a contractor with TekSystems for Flagstar Bank. Acting as Lead Engineer for the Mortgage Servicing team.  
+    • Documentation and testing and implementing bug fixes for upgrading Java Spring projects from Java 6 to Java 11. Local testing of compatibility of upgrading to Java 21+.
+    • Demonstrated composing meaningful tests using MUnit for Mule, Postman test suites for REST and SOAP services, and Groovy/Spock for Spring Boot projects.  
+    • Organized the team around an AMQ cloud migration and addressed several defects in Mule that allowed us to test flows using AMQ messaging.  
+    • Used VSCode Dataweave extension to implement fully unit-tested, reusable shared libraries for Mule Dataweave functions.  
+    • Added features to Maven pom files to restore local environment builds and improve CI/CD reporting and logging for debugging.  
+    • Augmented test suites while debugging issues in REST API’s wrapping Mortgage clearinghouse SOAP API’s. 
+    • Designed and developed a Mule 4 REST API for the Call Biometrics project to detect call fraud within the Salesforce CRM.  
+    • Tested and made first use of OAuth 2.0 authentication and common logging global libraries in Mule 4. 
+    • Demonstrated for team how to accomplish SSL encryption without 'pinning' certificates and how to use a shared library to onboard and retrieve secrets and credentials from the AWS secrets vault.  
+    • Deployed Mule mock services to allow client development to proceed in parallel with API development.  
+    • Participated in off-hours production releases and calls to address production and development environment issues.  
+    • Development stack included: MuleSoft Anypoint Studio, Mule Cloud Hub, GCP Apigee, Eclipse, IntelliJ, VSCode, SoapUI, Postman, MS teams, Jabber, 
+    • Outlook, ServiceNow, Sharepoint, Jira, Azure Board, Bitbucket, Bamboo, Jenkins, Github, Git, GithubDesktop, Git-Bash, GitHub Actions, Windows OS, Service Now, CyberArk, AWS Secrets, Nexus, Java 619, Spring, Spring Boot, Maven, Gradle, DataDog, Splunk, Dynatrace.  
+    • Fully remote with overseas teams.
+
+Duke Energy Corporation • Charlotte, NC • 03/2023 - 07/2023
+Senior IoT Full Stack Developer
+As a contractor for Summit Human Capital, for Duke Energy Distributed Intelligence Smart-Grid integration. 
+    • Took over maintenance and development of an Edge deployed, microservices framework and front-end UI to allow observability and control of Smart-Grid network devices.  
+    • Deployment automation, hardening, testing and features added to Actor model microservices of OpenFMB Rust projects at https://github.com/openenergysolutions. 
+    • Worked with Rust third-party public libraries to add features and create release artifacts. 
+    • Switched our development environment tooling to Ubuntu in AWS WorkSpaces.  
+    • Collaborated on development and began to write tests with Jest for a  
+    • typescript NATS message monitoring application derived from an updated version of https://github.com/ulexxander/nats-inspector.  
+    • CI/CD with Cargo, Docker, and AWS CodeBuild to ECR image repository.  
+    • Development of a Golang application for transferring images to the Edge network Kubernetes Gitops environment with Helm, Fleet, and Rancher.  
+    • Integration testing framework with Golang test-containers.  
+    • Development and maintenance of Java – Spring Boot REST API’s for customer facing web applications. 
+    • Development stack included: Kubernetes, Docker, Fleet, Helm, Rancher, EC2, Codebuild, ECR, AWS Workspaces, Golang, Rust, Java 8-17, Typescript, Protobuf, NATS (Kafka Alternative), MQtt, Postgres TimescaleDb.  
+    • Fully remote with overseas teams.
+
+Viewpointe • Charlotte, NC • 02/2022 - 05/2022
+Senior Java Engineer
+For Viewpointe archiving solutions projects.  
+    • Developed cloud REST services against JSON document database to support existing core functionality of on-premise solutions and transition to cloud-based services. Implementing processes and tools to support a fledgling Agile DevOps team moving toward GitOps release flow.  
+    • Special focus on refactoring for testability and SOLID design.  
+    • Development stack included Java 8-17, Spring Boot, 
+    • REST services, JSON Jackson, Spring Security, TestNG, Azure Cosmos DB, Azure Key Vault, Postman, GitHub, Azure DevOps, Azure App Service, Terraform, Scoop, Intellij, Codespace, VSCode.  
+    • Fully remote.  
+Smarsh • Portland, OR • 05/2021 - 11/2021
+Senior Java Engineer
+As a contractor with People Data and Solutions for Smarsh communications archiving solutions projects.  
+    • Drove migration of existing on-premise archiving solution to AWS using GitOps collaboration with the SRE and Development teams.  
+    • Designed, developed, and maintained back-end Java applications, associated Docker deploy and CI/CD infrastructure as code.  
+    • Enhanced the QA test system to allow it to be deployed as a dockerized application.  
+    • Debugged and contributed to tests for MS SQL T-SQL stored procedures.
+    • Discovered a flaw in the core email parsing module and designed and presented a solution using Mimekit, an open-source, performance mime parsing framework written in C#.  
+    • Collaborated on recommendations for transition to Solr Cloud.  
+    • Development stack included: Java 8-17, Apache Solr, Splunk, ActiveMQ, MS SQL Server, GitHub, Maven, Bash, Python, Windows, GitOps with Docker, Kubernetes, Kustomize, Flux, Travis, Lens.  
+    • Fully remote. 
+ 
+Prognos Health • New York, NY • 01/2019 - 11/2020  
+Senior Software Engineer
+On Agile DevOps team, supporting a Machine Learning development lifecycle for delivering business value on the largest source of clinical diagnostics information in over 40 disease areas with over 18B medical record types for 200M patients.
+    • Redesigned a HIPPA-compliant Golang data ingestion application for  
+    • maintainability and a 3x performance enhancement.  
+    • Assisted Data Partners with deployment and installation of ingestion binary.  
+    • Mapped data partner details to a data structure for easier maintenance of accounts and onboarding.  
+    • Designed an approach for using AWS Spot instances to reduce the cost of running platform EC2 instances.  
+    • Researched and demonstrated AWS Glue and Airflow for data intake jobs.  
+    • Developed DataDog performance metrics dashboards. 
+    • Development stack included: Go, Scala, Python, Vue, Databricks, Docker, AWS (EC2, EKS, API-Gateway, Secrets, Image Builder, Spot Instance, SNS, SQS,  , Step Function, others), Terraform, Github, Trello, Slack, Airflow, Circle CI, Travis.  
+    • Fully remote with core team members overseas.
+
+BJC HealthCare • St. Louis, MO • 12/2012 - 02/2019
+Technical Specialist
+Software Developer and System Architect with the Emerging Solutions team developing and maintaining the BJC Healthcare Electronic Health Record system.  
+    • Focused on delivering healthcare services to BJC practitioners, staff, and patients to meet and exceed Meaningful Use care quality improvement.  
+    • Projects included developing, maintaining, and supporting Java J2EEbased applications and Spring services (SOAP, REST), jQuery and JSP front ends, Groovy-Grails UI, data migrations and ETL with Groovy jobs, CI/CD with Groovy and Jenkins, to transition facilities to enterprise-wide EHR solution.  
+    • Implemented CCDA XML patient record transmission to/from HIE regional hub using Open Health Tools Model-Driven Health Tools (MDHT) Eclipse modeling framework.
+    • Enhanced integration of medical terminology language tool.
+    • Enhanced implementation of medical billing codes translation system.
+    • Delivered improvements to PACS image processing systems and DICOM standard image storage and retrieval.
+    • Developed and tuned Oracle SQL procedures and functions using PL/SQL, PLUnit, and Oracle PL/SQL Developer.
+    • Development stack included: Java 6-11, Groovy, Ant, Pl/SQL, Javascript, 
+    • CSS, DB2 PureXml, SpringMVC, Grails, VIM, IntelliJ, Netbeans, Apache Felix, Jetty, Apache Httpd, Apache Tomcat, Oracle GlassFish, Terracotta, Appdynamics, Sybase, DB2, DB2 PureXML, Apache CXF, SoapUI, Jersey, Postman, MuleSoft Mule ESB, Atlassian Confluence Suite, Cisco JabberWebex, Microsoft Outlook, ServiceNow, Jenkins, Atlassian Bamboo, Maven, Gradle, Nexus Sonatype, CVS, Subversion, Splunk, JUnit, Jmock, PowerMock, Mockito, Twitter Bootstrap CVS, Subversion, OSGI, Model Driven Health Tools, HL7 CCDA, HL7 HL7, Red Hat Enterprise Linux, AIX, Windows Server.
+    • Mostly remote, hybrid with core team members in St. Louis.
+
+CARFAX, Inc. • Columbia, MO • 10/2006 - 10/2012
+Enterprise Systems Developer
+Software developer and system architect for a leading provider of online vehicle history information for buyers and sellers of used cars.  
+    • Developed test-driven extract-transform-load (ETL) data intake engine.
+    • Designed, developed, maintained websites and internal applications.
+    • Developed and tuned Oracle SQL procedures and functions using PL/SQL, PLUnit, and Oracle PL/SQL Developer.
+    • Designed and developed a continuous integration pipeline.
+    • Development stack included: Java, Groovy, Ant, Gradle, PLI, DCI, JQuery, JavaScript, Html, CCS, Struts2, SpringMVX, Grails, SpringSource Tool Suite, Eclipse, VIM, Jenkins CI, Quickbuild, Apache Http Server, Apache Tomcat, tcServer, Weblogic, AgileZen, JIRA, Project Cards, Oracle, BMC, Apache Tomcat BMC Control M, Infromatica, Finesse, CVS, Subversion, Git, GitHub, SPSS, SalesForce, VMS, Oracle/RedHat Linus, Ubutu Linux, Windows Server.
+
+CERTIFICATION COURSES
+
+100 Days of Python • 02/2025
+https://replit.com/learn/100-days-of-python/hub 
+
+React JavaScript Framework • 11/2024
+https://www.linkedin.com/school/react-tutorial/Certificate
+react-app-tutorial-final-project
+
+Enterprise Web Development: JavaScript, NoSQL and Big Data EWD.JS • 05/2017 http://goo.gl/xJyBeI https://github.com/robtweed/ewd.js/
+EDUCATION
+
+Master’s Degree in Computer Science,
+University of Missouri, College of Engineering • 2006
+
+Bachelor’s Degree in Computer Science
+University of Missouri, College of Engineering • 2002
+
+Bachelor’s Degree in Biology
+University of Missouri, College Arts and Sciences • 1998
+
+ADDITIONAL ACHIEVEMENTS
+
+National Institutes of Health Biomedical and Health Informatics Research Training Program Fellowship • University of Missouri • 2004-2006
+
+ACM President • University of Missouri Chapter • 2001-2002

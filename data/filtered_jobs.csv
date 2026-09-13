@@ -1,0 +1,5 @@
+title,company,description,location,fit_score,good_matches,bad_matches,reason
+Senior Software Engineer,Acme Health,"Python, AWS, Kubernetes, healthcare systems",Remote,6,"python, aws, kubernetes, healthcare, engineer, software",,
+Senior Software Engineer,Direct Employer,"Python, SQL, platform, SaaS",Hybrid,6,"python, sql, saas, platform, engineer, software",,
+Senior Platform Engineer,Northwind Health,"Kubernetes, AWS, Python, platform engineering",Remote,5,"python, aws, kubernetes, platform, engineer",,
+Staff Engineer,Example SaaS,"Python, SaaS, product engineering, cloud",Remote,3,"python, saas, engineer",,

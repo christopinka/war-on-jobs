@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.DS_Store
+*.log
+
+# Local data files
+# Keep curated tracking data and shortlist artifacts in Git so they are backed up with the repo.
+# Generated outputs may be added explicitly when needed.
