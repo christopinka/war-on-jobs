@@ -14,6 +14,13 @@ Build a small, high-signal shortlist of direct employers that fit this profile:
 - remote-friendly or relevant geography
 - strong match for Python / Java / Go / AWS / Kubernetes / SQL / APIs / healthcare workflows
 
+Output target file:
+- Populate [data/targets/target_company_active_list.csv](../targets/target_company_active_list.csv) with the final shortlist for the core healthcare lane.
+- If a company is explicitly adjacent or secondary, it may be moved to [data/targets/adjacent_lane_targets.csv](../targets/adjacent_lane_targets.csv) instead of the active list.
+- Append new companies to the CSV rather than replacing the entire file.
+- If a company already exists, update that row in place instead of creating a duplicate.
+- Keep the list curated and small; do not overwrite the full file with a broad dump.
+
 Output format:
 company | website | category | priority | direct_employer | geography | remote_ok | notes
 
@@ -57,4 +64,4 @@ Teladoc Health | https://www.teladoc.com | digital health | medium | yes | us | 
 Veeva | https://www.veeva.com | regulated SaaS | medium | yes | us | maybe | life sciences and healthcare software
 
 ## Practical use
-Use this prompt to refresh the active target list in [data/target_company_active_list.csv](data/target_company_active_list.csv) and keep the queue tight and high-signal.
+Use this prompt to refresh the active target list in [data/targets/target_company_active_list.csv](data/targets/target_company_active_list.csv) and keep the queue tight and high-signal.
